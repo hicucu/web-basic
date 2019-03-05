@@ -67,3 +67,12 @@ ___
 - tr : 표의 행
 - ul : Unoerdered List, 순서 없는 목록
 - video : 비디오나 영상를 삽입할 때 사용
+
+___
+## 사용 자바스크립트 라이브러리
+- 구글맵 : google map API
+- JQuery
+- mobile-detect : 모바일 여부 확인
+- modernizr : 브라우저에서 지원하는 CSS3, HTML5의 기능 확인
+- select2 : AutoComplete 를 지원하는 select 확장 기능
+- Google Analytics : Google Analytics API
