@@ -11,16 +11,21 @@
   float: left;
   text-align: center;
 }
+.card1:hover{
+  font-size: 1.4em;
+}
 
 .card-img{
   width: 60px;
+}
+.card-img:hover{
+  width : 90px;
 }
 
 .card-title {
   font-size: 1em;
   text-align: center;
 }
-
 .card_align {
   text-align: center;
 }
