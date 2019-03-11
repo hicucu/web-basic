@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        
+        function toCentigrade() {
+            temperature = prompt("온도를 입력하세요");
+            temperature=Number(temperature);
+            value = ((1/2)*(temperature-30)+((temperature/2)-25)/9);
+
+            document.getElementById("returnValue").innerHTML=`화씨 ${temperature}는 섭씨 ${value}입니다.`;
+        }
+
+        function toFahrenheit() {            
+            temperature = prompt("온도를 입력하세요");
+            temperature=Number(temperature);
+            value=(2*(temperature+15))+((10-temperature)/5);
+
+            document.getElementById("returnValue").innerHTML=`섭씨 ${temperature}는 화씨 ${value}입니다.`;
+        }/*
+        preMenu = 0;
+        temperature = 0;        
+        while(1){
+            console.log("메뉴");
+            console.log("1. 화씨 -> 섭씨");
+            console.log("2. 섭씨 -> 화씨");
+            console.log("3. 종료");
+            console.log("----------------------------");
+
+            menu = prompt("메뉴를 선택하세요");
+
+            if(menu == 3){
+                break;
+            }            
+            else if(menu==1){
+                if(preMenu==2){
+                    console.log(temperature);
+                    preMenu = 0;
+                    continue;
+                }
+                temperature = prompt("온도를 입력하세요");
+                temperature = Number(temperature);
+                preMenu =1;
+                value = ((1/2)*(temperature-30)+((temperature/2)-25)/9);
+                console.log(value);
+
+            }
+            else if(menu==2){
+                if(preMenu==1){
+                    console.log(temperature);
+                    preMenu = 0;
+                    continue;
+                }
+                preMenu =2;   
+                temperature = prompt("온도를 입력하세요");
+                temperature = Number(temperature);
+                value=(2*(temperature+15))+((10-temperature)/5);
+                console.log(value);           
+            }
+        }*/
+    </script>
+</head>
+
+<body>
+
+    <span>메뉴를 선택하세요.</span>
+    <p class="fahrenheit" onclick="toCentigrade();">화씨 -> 섭씨</p>
+
+    <p class="centigrade" onclick="toFahrenheit();">섭씨 -> 화씨</p>
+
+    <p id="returnValue"></p>
+    <!--<span onclick="abc();"> 함수 실행하기</span>-->
+
+</body>
+
+</html>
