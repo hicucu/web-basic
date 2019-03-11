@@ -6,6 +6,22 @@
     <title>Title</title>
     <script type="text/javascript">
         
+        function conversion(menu){
+            temperature = prompt("온도를 입력하세요");
+            temperature=Number(temperature);
+            if(menu==1){
+            value = (temperature - 32) / 1.8;
+            returnMsg = `화씨 ${temperature}는 섭씨 ${value}입니다.`;
+            }
+
+            else if(menu==2){
+            value = temperature  * 1.8 + 32;
+            returnMsg = `섭씨 ${temperature}는 화씨 ${value}입니다.`;
+            }
+
+            document.getElementById("returnValue").innerHTML=returnMsg;
+        }
+
         function toCentigrade() {
             temperature = prompt("온도를 입력하세요");
             temperature=Number(temperature);
@@ -67,9 +83,9 @@
 <body>
 
     <span>메뉴를 선택하세요.</span>
-    <p class="fahrenheit" onclick="toCentigrade();">화씨 -> 섭씨</p>
+    <p class="fahrenheit" onclick="conversion(1);">화씨 -> 섭씨</p>
 
-    <p class="centigrade" onclick="toFahrenheit();">섭씨 -> 화씨</p>
+    <p class="centigrade" onclick="conversion(2);">섭씨 -> 화씨</p>
 
     <p id="returnValue"></p>
     <!--<span onclick="abc();"> 함수 실행하기</span>-->
